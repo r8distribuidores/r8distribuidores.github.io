@@ -5,7 +5,7 @@ export default function WhyUs() {
     <section id="nosotros" className="sec">
       <div className="w why">
         <div className="why-lead">
-          <h2>Atención directa, sin vueltas</h2>
+          <h2>Atención directa</h2>
           <p>
             Somos distribuidores de material médico e insumos para preparados magistrales.
             Hablas con quien te atiende y recibes una respuesta clara.

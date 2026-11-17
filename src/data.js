@@ -20,7 +20,7 @@ export const reasons = [
   { title: 'Trato directo', text: 'Hablas con quien te atiende, sin intermediarios.' },
   { title: 'Respuesta rápida', text: 'Cotizamos y confirmamos disponibilidad por WhatsApp.' },
   { title: 'Entrega coordinada', text: 'Enviamos por delivery; el costo depende de la distancia.' },
-  { title: 'Asesoría', text: 'Te orientamos para elegir el insumo o material adecuado.' },
+ 
 ]
 
 export const steps = [
