@@ -8,8 +8,8 @@ export const business = {
   email: 'r8distribuidores@hotmail.com',
   zone: 'Delivery. El costo depende de la distancia',
   hours: 'Atención por WhatsApp las 24 horas',
-  // Contador de visitas: crea tu cuenta gratis en goatcounter.com y pon aquí tu código
-  // (lo que va antes de .goatcounter.com). Déjalo vacío '' para ocultar el contador.
+  // Contador de visitas: funciona solo, sin cuenta. Opcional: si creas una cuenta gratis en
+  // goatcounter.com, pon aquí tu código para ver además estadísticas (países, celular, etc.).
   goatcounter: '',
 }
 
