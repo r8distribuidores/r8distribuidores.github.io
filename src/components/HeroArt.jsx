@@ -1,20 +1,20 @@
 // Ilustración de la portada: estante de farmacia dentro de un hexágono (como el logo)
 const HEX = '230,12 424,108 424,312 230,408 36,312 36,108'
 
-// Etiqueta de frasco: banda azul, marca hexagonal y líneas de texto
-function Label({ x, y, w, h, rx = true }) {
+// Etiqueta de frasco: banda azul y el logo de R8 (public/logo-etiqueta.png)
+const LOGO = `${import.meta.env.BASE_URL}logo-etiqueta.png`
+const RATIO = 700 / 452 // ancho / alto del logo
+
+function Label({ x, y, w, h }) {
+  const lw = w - 4
+  const lh = Math.min(lw / RATIO, h - 10)
+  const lx = x + (w - lh * RATIO) / 2
   return (
     <g>
       <rect x={x} y={y} width={w} height={h} rx="3" fill="#fff" />
-      <rect x={x} y={y} width={w} height="7" rx="3" fill="#2B3F9A" />
-      <rect x={x} y={y + 4} width={w} height="3" fill="#2B3F9A" />
-      <polygon
-        points={`${x + 14},${y + 14} ${x + 20},${y + 17.5} ${x + 20},${y + 24.5} ${x + 14},${y + 28} ${x + 8},${y + 24.5} ${x + 8},${y + 17.5}`}
-        fill="none" stroke="#C8302F" strokeWidth="1.6"
-      />
-      <rect x={x + 26} y={y + 16} width={w - 34} height="3" rx="1.5" fill="#101A45" opacity=".7" />
-      <rect x={x + 26} y={y + 22} width={(w - 34) * 0.6} height="3" rx="1.5" fill="#101A45" opacity=".35" />
-      {rx && <rect x={x + 8} y={y + h - 11} width={w - 16} height="3" rx="1.5" fill="#C8302F" />}
+      <rect x={x} y={y} width={w} height="6" rx="3" fill="#2B3F9A" />
+      <rect x={x} y={y + 3} width={w} height="3" fill="#2B3F9A" />
+      <image href={LOGO} x={lx} y={y + 7 + (h - 9 - lh) / 2} width={lh * RATIO} height={lh} preserveAspectRatio="xMidYMid meet" />
     </g>
   )
 }
@@ -105,7 +105,7 @@ export default function HeroArt() {
           <rect x="243" y="204" width="30" height="9" rx="3" fill="url(#cap)" />
           <path d="M243 216h30q8 6 8 20v52q0 12 -10 12h-26q-10 0 -10 -12v-52q0 -14 8 -20z" fill="url(#amb)" />
           <rect x="248" y="232" width="5" height="52" rx="2.5" fill="#fff" opacity=".34" />
-          <Label x={245} y={244} w={26} h={30} rx={false} />
+          <Label x={244} y={246} w={28} h={26} />
         </g></g>
 
         {/* matraz Erlenmeyer */}

@@ -35,7 +35,7 @@ export const steps = [
 export const slides = [
   {
     tag: 'Insumos químicos',
-    title: 'Activos y materias primas de calidad',
+    title: 'Activos y materias primas de alta calidad',
     text: 'Principios activos, ácidos, vitaminas y excipientes para farmacia y cosmética.',
     image: 'carrusel/insumos-quimicos.svg',
     alt: 'Matraces y frascos de laboratorio con insumos químicos',
@@ -53,7 +53,7 @@ export const slides = [
   },
   {
     tag: 'Material médico',
-    title: 'Material para consultorios y ecografía',
+    title: 'Material para consultorios ecograficos',
     text: 'Guantes, gel y papel para ecografía, papel sabanilla y más.',
     image: 'carrusel/material-medico.svg',
     alt: 'Guantes, gel para ecografía y rollo de papel térmico',
