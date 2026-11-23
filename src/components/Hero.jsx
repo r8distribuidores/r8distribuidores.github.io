@@ -20,7 +20,7 @@ export default function Hero() {
           <ul className="hero-perks">
             <li><strong>{items.length}+</strong> productos disponibles</li>
             <li><strong>Respuesta rápida</strong> por WhatsApp</li>
-            <li><strong>Delivery</strong> a tu negocio</li>
+            <li><strong>Delivery</strong> a su planta y/o consultorio</li>
           </ul>
         </div>
         <HeroArt />
