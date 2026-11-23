@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import { waLink } from '../data.js'
+import { items } from '../inventory.js'
+
+const codeOf = Object.fromEntries(items.map(([code, name]) => [name, code]))
 
 const TIPOS = ['Farmacia o botica', 'Laboratorio o fórmulas magistrales', 'Cosmética o cuidado personal', 'Clínica o consultorio', 'Otro']
 const empty = { nombre: '', negocio: '', tipo: '', telefono: '', correo: '', ciudad: '', notas: '' }
@@ -36,7 +39,7 @@ export default function QuoteForm({ sel, setSel }) {
       f.correo ? `Correo: ${f.correo}` : null,
       f.ciudad ? `Ciudad: ${f.ciudad}` : null,
       sel.length ? '\nProductos:' : null,
-      ...sel.map((n) => `• ${n}${qty[n] ? ` – ${qty[n]}` : ''}`),
+      ...sel.map((n) => `• ${codeOf[n] ? `${codeOf[n]} ` : ''}${n}${qty[n] ? ` – ${qty[n]}` : ''}`),
       f.notas.trim() ? `\nComentarios: ${f.notas.trim()}` : null,
     ].filter((l) => l !== null)
     window.open(waLink(lines.join('\n')), '_blank', 'noopener')
