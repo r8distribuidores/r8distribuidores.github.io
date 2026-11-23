@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
+import Carousel from './components/Carousel.jsx'
 import Catalog from './components/Catalog.jsx'
 import WhyUs from './components/WhyUs.jsx'
 import HowToOrder from './components/HowToOrder.jsx'
@@ -17,6 +18,7 @@ export default function App() {
     <>
       <Navbar />
       <Hero />
+      <Carousel />
       <Catalog sel={sel} setSel={setSel} />
       <WhyUs />
       <HowToOrder />

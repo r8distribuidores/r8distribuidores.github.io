@@ -28,3 +28,36 @@ export const steps = [
   { title: 'Recibe tu cotización', text: 'Te enviamos precio y disponibilidad.' },
   { title: 'Confirma y recibe', text: 'Coordinamos el pago y te lo llevamos por delivery.' },
 ]
+
+// Carrusel de la portada. Para usar fotos propias, reemplaza los archivos de
+// public/carrusel/ (puedes usar .jpg: cambia también el nombre en "image").
+// "category" es la categoría del catálogo que se abre con "Ver productos".
+export const slides = [
+  {
+    tag: 'Insumos químicos',
+    title: 'Activos y materias primas de calidad',
+    text: 'Principios activos, ácidos, vitaminas y excipientes para farmacia y cosmética.',
+    image: 'carrusel/insumos-quimicos.svg',
+    alt: 'Matraces y frascos de laboratorio con insumos químicos',
+    category: 'Activos farmacéuticos y cosméticos',
+    tone: 'blue',
+  },
+  {
+    tag: 'Preparados magistrales',
+    title: 'Todo para tus fórmulas magistrales',
+    text: 'Bases, emulsionantes, ceras y excipientes para cremas, cápsulas y geles.',
+    image: 'carrusel/preparados-magistrales.svg',
+    alt: 'Mortero, cápsulas y potes de crema para preparados magistrales',
+    category: 'Excipientes',
+    tone: 'red',
+  },
+  {
+    tag: 'Material médico',
+    title: 'Material para consultorios y ecografía',
+    text: 'Guantes, gel y papel para ecografía, papel sabanilla y más.',
+    image: 'carrusel/material-medico.svg',
+    alt: 'Guantes, gel para ecografía y rollo de papel térmico',
+    category: 'Material médico',
+    tone: 'deep',
+  },
+]
