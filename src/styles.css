@@ -195,6 +195,9 @@ a { color: inherit; }
 footer { padding: 26px 0 40px; }
 .foot { display: flex; align-items: center; gap: 14px; color: var(--mut); font-size: .92rem; flex-wrap: wrap; }
 .foot img { display: block; height: 44px; width: auto; }
+.views { display: inline-flex; align-items: center; gap: 6px; background: #fff; border: 1.5px solid var(--line); border-radius: 99px; padding: 6px 14px; color: var(--mut); }
+.views svg { color: var(--red); }
+.views strong { color: var(--deep); }
 
 .wa { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); background: #1fa855; color: #fff; border-radius: 99px; padding: 13px 22px; font-weight: 600; text-decoration: none; box-shadow: 0 8px 22px rgba(0, 0, 0, .28); z-index: 30; }
 

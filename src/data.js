@@ -8,6 +8,9 @@ export const business = {
   email: 'r8distribuidores@hotmail.com',
   zone: 'Delivery. El costo depende de la distancia',
   hours: 'Atención por WhatsApp las 24 horas',
+  // Contador de visitas: crea tu cuenta gratis en goatcounter.com y pon aquí tu código
+  // (lo que va antes de .goatcounter.com). Déjalo vacío '' para ocultar el contador.
+  goatcounter: '',
 }
 
 // Crea el enlace de WhatsApp con el mensaje ya escrito
@@ -53,7 +56,7 @@ export const slides = [
   },
   {
     tag: 'Material médico',
-    title: 'Material para consultorios ecograficos',
+    title: 'Material para consultorios ecográficos',
     text: 'Guantes, gel y papel para ecografía, papel sabanilla y más.',
     image: 'carrusel/material-medico.svg',
     alt: 'Guantes, gel para ecografía y rollo de papel térmico',
